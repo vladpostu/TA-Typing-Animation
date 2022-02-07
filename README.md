@@ -68,7 +68,7 @@ The library has two main methods
     Is the typing backward cancel animation. Insert the final word in the parameters.
 
     ```js
-    ta.typingForward("testing"); // the HTML element textContent before the function was "testing the library..."
+    ta.typingBackward("testing"); // the HTML element textContent before the function was "testing the library..."
     });
     ```
 
