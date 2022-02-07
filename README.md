@@ -26,7 +26,7 @@ then include the CSS file **TA.css** in the <head> tag
         ... 
         <link rel='stylesheet' href='./TA/TA.CSS'>
     </head>
-></html>
+</html>
 ```
 and the Javascript file **TA.js** and the bottom of the <body> tag but before the main js file
 
