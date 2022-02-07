@@ -70,6 +70,16 @@ The library has two main methods
     ta.typingBackward("testing"); // the HTML element textContent before the function was "testing the library..."
     ```
 
+## Other features
+
+### Caret
+
+To simulate an animated caret add **caret** class the the HTML element.
+
+```html
+<div class='caret'></div>
+```
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
