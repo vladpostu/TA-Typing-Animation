@@ -38,6 +38,8 @@ class TA {
     /**
      * typingForward method
      * 
+     * Insert the final form of the String
+     * 
      * Based on the base form element in the state the function gradually add letters until it has reached the entered parameter
      * 
      * i param must be 0 at the first function call
@@ -61,6 +63,8 @@ class TA {
     /**
      * typingBackward methdod
      * 
+     * Insert the final form of the String
+     * 
      * Based on the base form element in the state the function gradually remove letters until it has reached the entered parameter
      * 
      * @param {String} finalForm 
@@ -80,7 +84,7 @@ class TA {
      * 
      * Generate random number using the two parameters as extremes
      * 
-     * @param {number} min 
+     * @param {number} min
      * @param {number} max 
      * @returns random generated number
      */
