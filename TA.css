@@ -15,12 +15,24 @@
     transform: translate(-50%, -50%);
 }
 
-#ŧest::after {
+.caret::after {
     content: "";
-    width: 100px;
-    height: 100px;
-    position: absolute;
+    width: 30px;
+    height: 30px;
     border: 1px solid black;
-    top: 50%;
-    left: 50%;
+    animation: blink .5s infinite alternate-reverse;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    } 
+
+    50% {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }

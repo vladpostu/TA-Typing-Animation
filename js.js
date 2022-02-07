@@ -6,4 +6,4 @@ let ta = new TA({
     maxDelay: 100,
 });
 
-ta.typingBackward('test');
+ta.typingForward('testo lungo lungo lugno', 0);
