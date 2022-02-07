@@ -54,5 +54,25 @@ let ta = new TA({
 
 The library has two main methods
 
-- **typingForward(finalForm, i)** (finalFrom: [String] is the final text to reach, i: [number] must be 0 at the first call of the function)
+- **typingForward(finalForm, i)** (finalForm: [String] is the final text to reach, i: [number] must be 0 at the first call of the function)
+
     Is the typing forward animation. Insert the final word in the parameters.
+
+    ```js
+    ta.typingForward(" testing the library...");
+    });
+    ```
+
+- **typingBackward(finalForm)** (finalForm: [String] is the final text to reach)
+
+    Is the typing backward cancel animation. Insert the final word in the parameters.
+
+    ```js
+    ta.typingForward("testing"); // the HTML element textContent before the function was "testing the library..."
+    });
+    ```
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
