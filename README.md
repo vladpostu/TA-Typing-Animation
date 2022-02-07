@@ -60,7 +60,6 @@ The library has two main methods
 
     ```js
     ta.typingForward(" testing the library...");
-    });
     ```
 
 - **typingBackward(finalForm)** (finalForm: [String] is the final text to reach)
@@ -69,7 +68,6 @@ The library has two main methods
 
     ```js
     ta.typingBackward("testing"); // the HTML element textContent before the function was "testing the library..."
-    });
     ```
 
 ## Contributing
