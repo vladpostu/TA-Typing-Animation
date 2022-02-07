@@ -55,14 +55,14 @@ let ta = new TA({
 The library has two main methods
 
 ### typingForward(finalForm, i) 
-- finalForm: [String] is the final text to reach
-- i: [number] must be 0 at the first call of the function
+- finalForm: ***[String]*** is the final text to reach
+- i: ***[number]*** iterator function, **must be 0 at the first call of the function**
 
 
 Is the typing forward animation. Insert the final word in the parameters.
 
 ```js
-ta.typingForward(" testing the library...");
+ta.typingForward("testing the library...", 0);
 ```
 
 ### typingBackward(finalForm) 
