@@ -46,9 +46,9 @@ Initially a **TA** object must be initialized.
 
 The parameters are: 
 
-- **htmlEl**: ***[String]*** HTML query selected element
-- **minDelay**:  ***[int]*** minium delay beetween the letters typed
-- **maxDelay**:  ***[int]*** maxium delay beetween the letters typed
+- **htmlEl**: *[String]* HTML query selected element
+- **minDelay**:  *[int]* minium delay beetween the letters typed
+- **maxDelay**:  *[int]* maxium delay beetween the letters typed
 
 
 #### Example
@@ -63,8 +63,8 @@ let ta = new TA({
 ## Methods
 
 ### typingForward(finalForm, i) 
-- finalForm: ***[String]*** is the final text to reach
-- i: ***[number]*** iterator function, **must be 0 at the first call of the function**
+- finalForm: *[String]* is the final text to reach
+- i: *[number]* iterator function, **must be 0 at the first call of the function**
 
 
 Is the typing forward animation. Insert the final word in the parameters.
@@ -74,7 +74,7 @@ ta.typingForward("testing the library...", 0);
 ```
 
 ### typingBackward(finalForm) 
-- finalForm: [String] is the final text to reach
+- finalForm: *[String]* is the final text to reach
 
 
 Is the typing backward cancel animation. Insert the final word in the parameters.
