@@ -34,7 +34,7 @@ and the Javascript file **TA.js** and the bottom of the <body> tag but before th
     <body>
         ...
         <script src='./TA/TA.js'></script>
-        <script src='./js.js'></script> // main Javascript file
+        <script src='./js.js'></script> <!-- main Javascript file --> 
     </body>
 </html>
 ```
