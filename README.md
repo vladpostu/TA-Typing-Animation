@@ -8,7 +8,6 @@ Typing Animation is a JavaScript and CSS library that allows you to create typin
 
 - Fast and light
 - Need a few lines of code to write complex code
-- The only library that can do this animation
 
 ## Installation 
 
