@@ -65,7 +65,7 @@ let ta = new TA({
 
 ### typingForward(finalForm, i) 
 - **finalForm**: *[String]* is the final text to reach
-- **i**: *[number]* iterator function, **must be 0 at the first call of the function**
+- **i**: *[int]* iterator function, **must be 0 at the first call of the function**
 
 
 Is the typing forward animation. Insert the final word in the parameters.
