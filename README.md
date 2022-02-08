@@ -1,6 +1,6 @@
 
 
-# TA - Typing Animation v1
+# TA - Typing Animation 
 
 Typing Animation is a JavaScript and CSS library that allows you to create typing animation easily using only a few lines of code.
 
