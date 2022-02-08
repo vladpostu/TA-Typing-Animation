@@ -11,7 +11,7 @@ Typing Animation is a JavaScript and CSS library that allows you to create typin
 
 ## Installation 
 
-You must clone the repository inside your projectTA/
+You must clone the repository inside your project
 
 ```bash
 git clone https://github.com/vladpostu/TA-Typing-Animation.git 
