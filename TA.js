@@ -32,7 +32,41 @@ class TA {
             htmlEl: document.querySelector(state.htmlEl),
             minDelay: state.minDelay,
             maxDelay: state.maxDelay,
+
+            // Embedded HTML Element setter example
+            /*
+            *   set setSelector(htmlEl){
+            *       this.htmlEl = document.querySelector(htmlEl);
+            *   },
+            */
         }
+    }
+
+    /**
+     * HTML Element Setter of the TA class
+     * 
+     * @param {String} htmlEl
+     */
+    setSelector(htmlEl) {
+        this.state.htmlEl = document.querySelector(htmlEl);
+    }
+
+    /**
+     * Minimum Delay Setter of the TA class
+     * 
+     * @param {number} minDelay
+     */
+     setMinDelay(minDelay) {
+        this.state.minDelay = minDelay;
+    }
+
+    /**
+     * Maximum Delay Setter of the TA class
+     * 
+     * @param {number} maxDelay
+     */
+     setMaxDelay(maxDelay) {
+        this.state.maxDelay = maxDelay;
     }
 
     /**
