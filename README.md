@@ -9,6 +9,7 @@ Typing Animation is a JavaScript and CSS library that allows you to create typin
 - Fast and light
 - Need a few lines of code to write complex code
 - Possibility to simulate the delay beetween the typed letters
+- Animated caret like the one of an input field
 
 ## Installation 
 
@@ -63,8 +64,8 @@ let ta = new TA({
 ## Methods
 
 ### typingForward(finalForm, i) 
-- finalForm: *[String]* is the final text to reach
-- i: *[number]* iterator function, **must be 0 at the first call of the function**
+- **finalForm**: *[String]* is the final text to reach
+- **i**: *[number]* iterator function, **must be 0 at the first call of the function**
 
 
 Is the typing forward animation. Insert the final word in the parameters.
@@ -74,7 +75,7 @@ ta.typingForward("testing the library...", 0);
 ```
 
 ### typingBackward(finalForm) 
-- finalForm: *[String]* is the final text to reach
+- **finalForm**: *[String]* is the final text to reach
 
 
 Is the typing backward cancel animation. Insert the final word in the parameters.
