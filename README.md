@@ -8,6 +8,7 @@ Typing Animation is a JavaScript and CSS library that allows you to create typin
 
 - Fast and light
 - Need a few lines of code to write complex code
+- Possibility to simulate the delay beetween the typed letters
 
 ## Installation 
 
@@ -41,7 +42,16 @@ and the Javascript file **TA.js** and the bottom of the <body> tag but before th
 
 ## Getting started
 
-Initially a **TA** object must be initialized. In the parameters must be declared the HTML element to modify, the minium delay and max delay beetween the letters typed.
+Initially a **TA** object must be initialized.
+
+The parameters are: 
+
+- **htmlEl**: ***[String]*** HTML query selected element
+- **minDelay**:  ***[int]*** minium delay beetween the letters typed
+- **maxDelay**:  ***[int]*** maxium delay beetween the letters typed
+
+
+#### Example
 
 ```js
 let ta = new TA({
