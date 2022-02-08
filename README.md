@@ -60,8 +60,7 @@ let ta = new TA({
     maxDelay: 150,
 });
 ```
-
-The library has two main methods
+## Methods
 
 ### typingForward(finalForm, i) 
 - finalForm: ***[String]*** is the final text to reach
