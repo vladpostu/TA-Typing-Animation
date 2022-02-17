@@ -12,7 +12,7 @@
  * 
  * Main class containing the methods needed for the animation
  */
-class TA {
+ class TA {
     
     // state containg the animation attributes
     state = {
@@ -32,7 +32,41 @@ class TA {
             htmlEl: document.querySelector(state.htmlEl),
             minDelay: state.minDelay,
             maxDelay: state.maxDelay,
+
+            // Embedded HTML Element setter example
+            /*
+            *   set setSelector(htmlEl){
+            *       this.htmlEl = document.querySelector(htmlEl);
+            *   },
+            */
         }
+    }
+
+    /**
+     * HTML Element Setter of the TA class
+     * 
+     * @param {String} htmlEl
+     */
+    setSelector(htmlEl) {
+        this.state.htmlEl = document.querySelector(htmlEl);
+    }
+
+    /**
+     * Minimum Delay Setter of the TA class
+     * 
+     * @param {number} minDelay
+     */
+     setMinDelay(minDelay) {
+        this.state.minDelay = minDelay;
+    }
+
+    /**
+     * Maximum Delay Setter of the TA class
+     * 
+     * @param {number} maxDelay
+     */
+     setMaxDelay(maxDelay) {
+        this.state.maxDelay = maxDelay;
     }
 
     /**
@@ -72,11 +106,12 @@ class TA {
     typingBackward(finalForm) {
         let duration = this.getRandomNumber(this.state.minDelay, this.state.maxDelay);
     
-        if (this.state.htmlEl.textContent.length > finalForm.length) {
+        if (this.state.htmlEl.textContent.length != finalForm.length) {
             this.state.htmlEl.textContent = this.state.htmlEl.textContent.slice(0, (this.state.htmlEl.textContent.length-1));
+
+            setTimeout(() => this.typingBackward(finalForm), duration);
         }
-    
-        setTimeout(() => this.typingBackward(finalForm), duration);
+        
     }
     
     /**
@@ -93,6 +128,3 @@ class TA {
     }
     
 }
-
-
-
