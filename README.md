@@ -1,6 +1,6 @@
 
 
-# TA - Typing Animation v1
+# TA - Typing Animation 
 
 Typing Animation is a JavaScript and CSS library that allows you to create typing animation easily using only a few lines of code.
 
@@ -8,11 +8,12 @@ Typing Animation is a JavaScript and CSS library that allows you to create typin
 
 - Fast and light
 - Need a few lines of code to write complex code
-- The only library that can do this animation
+- Possibility to simulate the delay beetween the typed letters
+- Animated caret like the one of an input field
 
 ## Installation 
 
-You must clone the repository inside your projectTA/
+You must clone the repository inside your project
 
 ```bash
 git clone https://github.com/vladpostu/TA-Typing-Animation.git 
@@ -35,14 +36,23 @@ and the Javascript file **TA.js** and the bottom of the <body> tag but before th
     <body>
         ...
         <script src='./TA/TA.js'></script>
-        <script src='./js.js'></script> // main Javascript file
+        <script src='./js.js'></script> <!-- main Javascript file --> 
     </body>
 </html>
 ```
 
 ## Getting started
 
-Initially a **TA** object must be initialized. In the parameters must be declared the HTML element to modify, the minium delay and max delay beetween the letters typed.
+Initially a **TA** object must be initialized.
+
+The parameters are: 
+
+- **htmlEl**: *[String]* HTML query selected element
+- **minDelay**:  *[int]* minium delay beetween the letters typed
+- **maxDelay**:  *[int]* maxium delay beetween the letters typed
+
+
+#### Example
 
 ```js
 let ta = new TA({
@@ -51,12 +61,11 @@ let ta = new TA({
     maxDelay: 150,
 });
 ```
-
-The library has two main methods
+## Methods
 
 ### typingForward(finalForm, i) 
-- finalForm: ***[String]*** is the final text to reach
-- i: ***[number]*** iterator function, **must be 0 at the first call of the function**
+- **finalForm**: *[String]* is the final text to reach
+- **i**: *[int]* iterator function, **must be 0 at the first call of the function**
 
 
 Is the typing forward animation. Insert the final word in the parameters.
@@ -66,7 +75,7 @@ ta.typingForward("testing the library...", 0);
 ```
 
 ### typingBackward(finalForm) 
-- finalForm: [String] is the final text to reach
+- **finalForm**: *[String]* is the final text to reach
 
 
 Is the typing backward cancel animation. Insert the final word in the parameters.
